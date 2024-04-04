@@ -1,0 +1,128 @@
+/*seletor{
+    propriedade:valor;
+}*/
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px
+}
+
+.home {
+    background-color: hsl(210, 100%, 20%);
+}
+
+h1 {
+    color: #ffffff;
+    margin-top: 0px;
+}
+
+.navegacao {
+    width: 680px;
+    margin-top: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.navegacao a {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+.leitor{
+    color:#ffffff;
+    background-image: url(img/background-imc.jpg);/*img\background-imc.jpg*/
+    text-align: center;
+    background-size:cover;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+.conteudo{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    color: #555;
+
+}
+.conteudo-imc{
+    display:flex;
+    justify-content:space-between;
+}
+.conteudo-imc input{
+    width: 300px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px #CCCCCC solid;
+    margin-bottom: 10px;
+    box-sizing: border-box;/* faz com que o elemento nao ultrapasse as dimensoes de padding e boarding*/
+}
+.conteudo-imc button{
+    width: 130px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #003366;
+    border:none ;
+    color: #ffffff;
+    cursor: pointer
+}
+.conteudo-imc button:hover{
+    background-color: #1666b5;
+}
+.conteudo-imc table{
+    width: 350px;
+    text-align: center;
+    font-size: 14px;
+}
+.conteudo-imc tr{
+    background-color: #d9d9d9;
+   
+}
+.conteudo-imc tr:hover{
+    background-color: #b9b9b9;
+}
+.conteudo-imc th{
+    background-color: #003366;
+    color: #ffffff;
+}
+.conteudo-imc th:hover{
+    background-color: #1666b5;
+}
+.rodape{
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    font-size: 14px;
+
+}
+.rodape a{
+    color:#ffffff;
+}
+@media (max-width: 768px){
+    h1{font-size: 32px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .header{
+        padding-top: 90px;
+        padding-bottom: 90px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .conteudo-imc{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .conteudo{
+        width: 90%
+    }
+    .conteudo-imc table,.conteudo-imc input{
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="leitor">
+        <h1>Calculo de IMC</h1>
+        <h2>Quer descobrir seu imc? insira seu peso e
+            altura nos campos abaixo e compare com os indices da tabela</h2>
+    </div>
+    <div class="conteudo">
+
+        <h3>Divide-se o peso do pela sua altura elevada ao quadrado
+        </h3>
+        <p>Preencha os campos abaixo com o peso e a altura e clique no botão “calcular” para ter acesso ao seu
+            resultado. Consulte a tabela para ver sua classificação.</p>
+    
+    <div class="conteudo-imc">
+        <form autocomplete="off">
+            <label>informe seu peso</label><br>
+            <input type="number" id="peso"><br>
+
+            <label>informe sua altura</label><br>
+            <input type="number" id="altura"><br>
+            <button type="button" onclick="calcularImc()">calcular</button>
+<div id="resultado"></div>
+        </form>
+        <table >
+            <tr>
+                <th>referencia</th>
+                <th>classificação</th>
+            </tr>
+            <tr>
+                <td>abaixo de 18.5</td>
+                <td>magreza</td>
+            </tr>
+            <tr>
+                <td>entre 25 e 29.9</td>
+                <td>normal</td>
+           </tr>
+           <tr>
+            <td>entre 30 e 34.9</td>
+            <td>obesidade</td>
+        </tr>
+        <tr>
+            <td>entre 35 e 39.9</td>
+            <td>obesidade grave</td>
+        </tr>
+        <tr>
+            <td>acima de 40</td>
+            <td>obesidade grave II</td>
+        </tr>
+        </table>
+    </div>
+</div>
+<div class="rodape">
+    Projeto desenvolvido pela <a href="https://cotiinformatica.com.br" target="_blank">coti informática</a>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
